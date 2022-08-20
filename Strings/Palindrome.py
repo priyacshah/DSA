@@ -23,7 +23,7 @@ class Solution(object):
         #Efficient solution
         reversed = 0
         while x < reversed:
-            reversed = reversed + x%10
+            reversed = reversed*10 + x%10
             x = x/10
          
         if x == reversed or x == reversed/10:
