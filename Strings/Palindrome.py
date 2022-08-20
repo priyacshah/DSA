@@ -19,10 +19,19 @@ class Solution(object):
         #             return False
         #         if j == half:
         #             return True
-        x= str(x)
-        reverse = x[::-1]
-        if str(x) == reverse:
+        
+        #Efficient solution
+        reversed = 0
+        while x < reversed:
+            reversed = reversed + x%10
+            x = x/10
+         
+        if x == reversed or x == reversed/10:
             return True
-        else:
-            return False
+#         x= str(x)
+#         reverse = x[::-1]
+#         if str(x) == reverse:
+#             return True
+#         else:
+#             return False
         
